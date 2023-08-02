@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  #menu ul {
+list-style-type: none;
+background:  rgb(15, 23, 68);
+text-align: center;
+border-radius: 30px;
+}
+#menu ul li {
+    display: inline-table;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+#menu ul li a {
+color: #f1f1f1;
+text-decoration: none;
+display: block;
+
+}
+#menu ul li a:hover {
+    background: #f1f1f1;
+    color:#333;
+}
+
+#menu ul li > .sub-menu{
+display: none;
+position: absolute;
+}
+#menu ul li:hover .sub-menu{
+display: block;
+}
+#menu ul li > .sub2-menu{
+display: none;
+position: absolute;
+}
+#menu ul li:hover .sub2-menu{
+display: block;
+}
+#menu ul li> .sub3-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub3-menu{
+display: block;
+}
+#menu ul li> .sub4-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub4-menu{
+display: block;
+}
+html
+{
+background-image: url("Thuan1.jpg");
+background-repeat: no-repeat;
+background-size:cover ;
+}
+#para{
+    font-size: 50px;
+    font-family:fantasy ;
+    color: White;
+}
+
+#para2{
+    font-size: 30px;
+    color: white;
+    font-family: Arial;
+}
+
+#button{
+    position: absolute;
+    width: 100px;
+    display: block;
+    
+}
+.block {
+  display: block;
+  width: 20%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+    border-radius: 20px;
+}
+#footer{
+    background: grey;
+    padding: 15px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding:20px 100px; 
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99%;
+}
+  
+
+</style>
+</head>
+<body>
+
+<header>
+<div id="menu">
+    <ul>
+        <li><a href="#">Home Page</a></li>
+        <li>
+            <a href="#"> Course</a>
+        <ul class="sub4-menu">
+                <li><a href="#">Online-Course</a></li>
+                <li><a href="#">Offline-Course</a></li>
+        </ul>
+        </li>
+        <li>
+            <a href="#"> Skills</a>
+        <ul class="sub3-menu">
+            <li><a href="#">Grammar</a></li>
+            <li><a href="#">Vocabulary</a></li>
+            <li><a href="#">Listening</a></li>
+        </ul>
+        </li>
+
+        <li>
+            <a href="#"> About Us</a>
+            <ul class="sub-menu">
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Achiverment</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </li>
+        <li><a href="#"> More</a></li>
+        
+        <li>
+            <a href="#">Account</a>
+            <ul class="sub2-menu">
+            <li><a href="signin.html">Sign Up</a></li>
+            <li><a href="signin.html">Log In</a></li>
+        </ul>
+        </li>
+    </ul>    
+</div>
+</header>
+
+<div id="content">
+<div id="para">
+    <P>The English House</P>
+    <p> The 3RD BSU ACADEMIC SUMMIT</p>
+</div>
+
+
+<div id="para2">
+    <p>Want to see new ways to learn English</p>
+    <p>Come join with us</p>
+</div>
+
+<div id="button">
+    <input type="text" placeholder="Search-bar">
+    <button>Go</button>
+    
+</div>
+
+<div>
+    <button type="button" class="block">Let's Get Started</button>
+</div>
+
+<div id="footer">
+    <span>Copy Right &copy 2023-2030 The King T.com </span>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.options {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login button {
+    margin: 5px;
+    background-color: #3b5998;
+}
+
+.social-login button#google-login {
+    background-color: #dd4b39;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <form id="register-form" style="display: none;">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="repassword" placeholder="Confirm Password" required>
+            <input type="text" id="gmail" placeholder="Email Address" required>
+            <input type="text" id="fname" placeholder="First Name" required>
+            <input type="text" id="lname" placeholder="Last Name" required>
+            <button type="submit">Register</button>
+        </form>
+        <form id="forgotpass-form" style="display: none;">
+            <input type="text" id="username" placeholder="Username" required>
+        </form>
+        <div class="options">
+            <a href="#" id="forgot-password">Forgot Password?</a>
+            <a href="#" id="register">Register</a>
+        </div>
+        <div class="social-login">
+            <button id="google-login">Login with Google</button>
+            <button id="facebook-login">Login with Facebook</button>
+        </div>
+    </div>
+
+    <script src="TA.JS"></script>
+</body>
+</html>

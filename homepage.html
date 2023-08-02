@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+#menu ul {
+    list-style-type: none;
+    background:  rgb(15, 23, 68);
+    text-align: center;
+    border-radius: 30px;
+}
+#menu ul li {
+    display: inline-table;
+    width: 150px;
+    height: 40px;
+    line-height: 45px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+    
+}
+#menu ul li a:hover {
+    background: #f1f1f1;
+    color:#333;
+    border-radius: 50px;
+    
+}
+
+#menu ul li > .sub-menu{
+    display: none;
+    position: absolute;
+    
+}
+#menu ul li:hover .sub-menu{
+    display: block;
+    
+}
+#menu ul li > .sub2-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub2-menu{
+    display: block;
+}
+#menu ul li> .sub3-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub3-menu{
+    display: block;
+}
+#menu ul li> .sub4-menu{
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub4-menu{
+    display: block;
+}
+
+
+
+html
+{
+    background-image: url("Thuan1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+} 
+
+#para{
+    font-size: 50px;
+    font-family:fantasy ;
+    color: White;
+}
+
+#para2{
+    font-size: 30px;
+    color: white;
+    font-family: Arial;
+}
+
+#button{
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    font-size: 20px;
+    margin: 4px 20px 1px 600px;
+    cursor: pointer;
+    
+}
+
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#menu{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+#footer{
+    text-align: center;
+    
+    background-color: rgb(186, 188, 199);
+}
+
+#footer .social-list{
+    font-size: 50px;
+    
+
+}
+
+#footer .social-list a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+   
+}
+
+#footer .social-list a:hover{
+    color:rgba(0,0,0,0.6);
+}
+
+#footer .copyright{
+    margin-top:15px;
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.content-section {
+    margin :auto;
+    font-size: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.section-heading{
+    display :flex;
+    justify-content: center;
+    background: rgb(15, 23, 68);
+    color:#ffffff;
+    padding : 10px 10px;
+}
+
+#bottom{
+    display :flex;
+    justify-content: right;
+    color:#ffffff;
+    padding : 10px 10px;
+    margin: 10px;
+    
+    
+}
+
+.logo {
+  width: 30% ;
+  background-color: rgb(186, 188, 199);
+  float: left;
+  box-sizing: border-box;
+  padding: 5px auto ;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+
+
+.banner{
+    width: 100% ;  
+  background-color: rgb(186, 188, 199);
+  box-sizing: border-box;
+  padding: 100px ;
+  text-align: right;
+  margin: 0 auto;
+  
+}
+
+.hehe{
+    width: 800px;
+    max-width: 100%;
+    text-align: start;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+    column-gap: 15px;
+    
+}
+
+.hehe #skill1 img{
+    height: 320px;
+    width: 400px;
+    background-size: cover;
+}
+
+.hehe #skill4 img{
+    height: 320px;
+    width: 400px;
+    background-size: cover;
+}
+
+.hehe #skill5 img{
+    height: 320px;
+    width: 400px;
+    background-size:cover ;
+}
+
+#skill2,#skill3,#skill6{
+    background-color: #f1f1f1;
+}
+
+.block1 {
+    display: block;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.block1:hover{
+    background-color: rgb(26, 26, 129);
+    color: #ffffff;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">    
+    <div id="para">
+    <P>The English House</P>
+    <p> The 3RD BSU ACADEMIC SUMMIT</p>
+    </div>
+</div>
+
+
+<div id="menu">
+        <ul>
+            <li><a href="#">Home Page</a></li>
+            <li>
+                <a href="#"> Course</a>
+            <ul class="sub4-menu">
+                    <li><a href="#">Online-Course</a></li>
+                    <li><a href="#">Offline-Course</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#"> Skills</a>
+            <ul class="sub3-menu">
+                <li><a href="#">Grammar</a></li>
+                <li><a href="#">Vocabulary</a></li>
+                <li><a href="#">Listening</a></li>
+            </ul>
+            </li>
+
+            <li>
+                <a href="#"> About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Achiverment</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> More</a></li>
+            
+            <li>
+                <a href="#">Account</a>
+                <ul class="sub2-menu">
+                <li><a href="signin.html">Sign Up</a></li>
+                <li><a href="signin.html">Log In</a></li>
+            </ul>
+            </li>
+        </ul>    
+</div>
+
+<div id="content">
+    <div id="para2">
+        <p>Want to see new ways to learn English?</p>
+        <p>Come join with us</p>
+    </div>
+
+    <div id="button">
+        <input type="text" placeholder="Search-bar">
+        <button>GO</button>
+    
+    </div>
+
+    
+
+    <div class="hehe">
+        <div id="skill1">
+            <img src="https://topshare.vn/wp-content/uploads/2020/07/Hinh-nen-thien-nhien-dep-30-1024x767.jpg" alt="beach coast">
+        </div>
+        <div id="skill2">
+            <ul><h2>Attention</h2></ul>
+            <ul>
+                You've been runnin' round, runnin' round, runnin' round throwing that dirt all on my name
+                'Cause you knew that I, knew that I, knew that I'd call you up
+                You've been going round, going round, going round every party in LA
+                'Cause you knew that I, knew that I, knew that I'd be at one
+                [Bridge]
+                I know that dress is karma, perfume regret
+                You got me thinking 'bout when you were mine
+                And now I'm all up on ya, what you expect
+                But you're not coming home with me tonight
+            </ul>
+            <ul><button type="button" class="block1">Let's get started!</button></ul>
+            
+        </div>
+            <div id="skill3">
+                <ul>
+                <h2>Light Switch</h2>
+                </ul>
+                <ul>
+                    Why you callin' at 11:30
+                    When you only wanna do me dirty?
+                    But I hit right back
+                    'Cause you got that-that, yeah
+                    Why you always wanna act like lovers
+                    But you never wanna be each others'?
+                    I say, "Don't look back"
+                    But I go right back and
+    
+                    [Pre-Chorus]
+                    All the sudden, I'm hypnotized
+                    You're the one that I can't deny
+                    Every time that I say I'm gonna walk away
+                </ul>
+                <ul>
+                <button type="button" class="block1">Let's get started!</button>
+                </ul>
+            </div>
+            <div id="skill4">
+                <img src="https://2.bp.blogspot.com/-HtPCIbgSkt0/WovMFytCxbI/AAAAAAAACBs/vJ21foj_yRQqBn76yMLHeOchBFlywXgRQCLcBGAs/s640/tong-hop-nhung-hinh-nen-thien-nhien-dep-cho-may-tinh-hinh-anh-8.jpg" alt="grass field">
+            </div>
+        <div id="skill5">
+            <img src="https://th.bing.com/th/id/OIP.9cqlIAKpPr9XTxhxQffqEgHaEe?pid=ImgDet&rs=1" alt="Sakura Tree">
+        </div>
+        <div id="skill6">
+            <ul>
+            <h2>See you again</h2>
+            </ul>
+            <ul>
+                It's been a long day
+                Without you, my friend
+                And I'll tell you all about it when I see you again
+                We've come a long way
+                From where we began
+                Oh, I'll tell you all about it when I see you again
+                When I see you again
+            </ul>
+            <ul>
+            <button type="button" class="block1">Let's get started!</button>
+            </ul>
+        </div>
+    </div>
+    
+
+
+<div class="content-section" style="margin-bottom :500px">
+        <h2 class="section-heading">CEO AND The Crew</h2>
+</div>
+ 
+
+
+
+
+
+
+<div id="footer"> 
+    <div class="logo">
+        <img src="thuan4.png" width="100px" height="100px">
+        <h1>The English House</h1>
+        <h2>Contact Us</h2>
+        <address>
+            <p>Phone: +84 859779658</p>
+            <p>Email: theenglishhouse@gmail.com</p>
+            <p>Address: 3F Đ. Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh </p>
+        </address>
+    </div>
+    
+
+
+
+
+
+
+    <div class="banner">
+        <h1 id="bottom">Follow Us</h1>
+        <div class="social-list">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p class="copyright">POWERED BY <a href="">www.theenglishhouse.com</a></p>
+    </div>
+
+</div>
+    
+
+
+</body>
+</html>

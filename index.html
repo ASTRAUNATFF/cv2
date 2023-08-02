@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <body- http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    
+    <style>
+html {
+    background: rgba(219, 219, 219, 0.863);
+    scroll-margin: 100px;
+    padding: 100px;
+    border: 40px;
+
+
+}
+
+body{
+    margin: 100px;
+    padding: 80px;
+    border: solid 10px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+list-style: none;
+margin-left: 0;
+padding-left: 1.2em;
+text-indent: -1.2em;
+}
+
+li:before {
+content: "►";
+display: block;
+float: left;
+width: 1.2em;
+color: #1a1a1a;
+}
+
+p{
+color: black;
+}
+
+button{
+border: 14px solid red;
+}
+
+.name{
+font-size: 50px;
+position: relative;
+top: -150px;
+left: 300px; 
+color: rgb(51, 153, 230);
+}
+
+.avartar{
+position:relative; 
+right: 20px;
+top:2px;
+}
+
+.contact{
+position: relative; 
+top: -150px;
+left: 300px;
+color: rgb(51, 153, 230);
+}
+
+.career{
+color: black;
+}
+
+.slider {
+width:800px;
+height:500px;
+border-radius: 10px;
+overflow:hidden;
+
+}
+.slides{
+width:500%;
+height:500px;
+display: flex;
+}
+.slides input{
+display:none;
+}
+.pic {
+width:20%;
+transition:2s;
+}
+.pic img{
+width:1000px;
+height:400px;
+justify-content:center;
+}
+.navigation-manual{
+position:absolute;
+width:800px;
+margin-top:-40;
+display:flex;
+justify-content: center;
+}
+.manual-btn{
+border:2px solid #40dca5;
+padding:5px;
+border-radius: 10px;
+cursor:pointer;
+transition:1s;
+}
+.manual-btn:not(:last-child) {
+margin-right:40px;
+
+}
+.manual-btn:hover{
+background:#dcbd40;
+}
+#radio1:checked ~ .first{
+margin-left:0;
+}
+#radio2:checked ~ .first{
+margin-left:-20%;
+}#radio3:checked ~ .first{
+margin-left:-40%;
+}
+#radio4:checked ~ .first{
+margin-left:-60%;
+}
+.navigation-auto{
+position:absolute;
+display:flex;
+width:800px;
+justify-content:center;
+margin-top:460px;
+}
+.navigation-auto div{
+border:2px solid #40dca5;
+padding:5px;
+border-radius: 10px;
+transition:1s;
+}
+.navigation-auto div:not(:last-child){
+margin-right:40px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1{
+background:#40dca5;
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+background:#40dca5;
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+background:#40dca5;
+}
+#radio4:checked~ .navigation-auto .auto-btn4{
+background:#40dca5;
+}
+
+
+</style>
+
+</head>
+
+<div class="avartar">
+   <img id="avatar1" width="200px"; height="200px" src="thuan2.jpg"/> 
+</div>
+    
+<div class="name">
+    HO PHUC THUAN
+</div>
+
+<div class="contact">
+    Email: hophucthuan0605@gmail.com • Phone Nummber: (+84) 859776985
+
+</div>
+
+<div>
+        <p style="color:rgb(51, 153, 230)">About me</p>
+        <p style="font-family: Oswald, sans-serif;">Software Engineer </p>
+        <p>Honestly, I'm just a newbie in IT flied, and I can't say that I've done this or that to brag about my achievements and that's not my personality either. But that doesn't mean I can't do anything or know nothing. I am a person who can say yes. I may not be able to change the direction of the wind. But I can change the path I'm on to get where I want to be. Or I can't agree with everyone's thoughts. But I can unite everyone through a single goal. In short, I am very important in creating something because when we know for sure what we are doing, the result is always what we want.</p>
+</div>
+
+<div class="career">
+    <p style="color:rgb(51, 153, 230);">CAREER GOALS</p>
+    <ul>
+        <li>Looking for a stable and long-term job?</li>
+        <li>Looking for a job with good salary</li>
+        <li>Wish to have the opportunity to dedicate myself well</li>
+    </ul>
+</div>
+
+<div class="education">
+    <p style="color:rgb(51, 153, 230);">EDUCATION</p>
+        <p>2021 - 2023 Studying IT at NIIE University</p>
+        <p>2018 - 2021 Graduated TP Cao Lanh High School with Excellent</p>
+        <p>2015 - 2018 Graduated Kim Hong Junior High School with Excellent </p>
+        <p>2009 - 2015 Graduated Chu Van An Primary School with Excellent</p>
+</div>
+
+<div class="experience">
+    <p style="color:rgb(51, 153, 230);">EXPERIENCE</p>
+    <p>NTT INSTITUTE OF INTERNATIONAL EDUCATION (NIIE) University</p>
+<ul>
+        <li><p>Being the leader for the Voiceover of Cartoon Characters contest and won the first prize</p></li>
+        <li><p>Successful in Protect the small project call "The Zoo" during in University</p></li>
+        <li><p>Won the Third Prize in the model Fashion Competition in University</p></li>
+</ul>
+</div>
+
+<div class="skill">
+    <p style="color:rgb(51, 153, 230);">SKILL</p>
+    <ul>
+        <li><p>C Intermediate</p></li>
+        <li><p>English Intermediate</p></li>
+        <li><p>Python Intermediate</p></li>
+        <li><p>OS: Window</p></li>
+    </ul>
+</div>
+
+<div>
+    
+
+</div>
+
+<div>
+    <div class="slider">
+        <div class="slides">
+            <input type = "radio" name="radio-btn" id="radio1">
+            <input type = "radio" name="radio-btn" id="radio2">
+            <input type = "radio" name="radio-btn" id="radio3">
+            <input type = "radio" name="radio-btn" id="radio4">
+
+            <div class="pic first">
+                <img src="Thuan1.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="thuan2.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="thuan3.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="Thuan1.jpg" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter ).checked=true;
+            counter++;
+            if(counter>4){
+                counter =1;
+            }
+        },5000);
+    </script>
+
+</div>
+
+
+</body>
+</html>
